@@ -7,6 +7,7 @@ export interface Pokemon {
     height: string;
     abilities:{ ability: string, name: string }[];
     types:{ type: string, name: string }[];
+    moves:{ move:string, name: string }[];
 }
 
 export interface PokemonApiResponse {
