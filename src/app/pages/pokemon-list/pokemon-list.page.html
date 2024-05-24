@@ -1,7 +1,7 @@
 <ion-header>
     <ion-toolbar>
         <ion-title>
-            Pokémon List
+            Lista de Pokémons
         </ion-title>
         <ion-buttons slot="end">
             <ion-button (click)="toggleOrder()">
@@ -20,7 +20,7 @@
         <ion-row>
             <ion-col size="12" size-md="12" size-lg="12" *ngFor="let pokemon of filteredPokemons">
                 <ion-card>
-                    <ion-router-link [routerLink]="'/pokemon-detail/' + pokemon.name">
+                    <ion-router-link [routerLink]="['/pokemon-detail/' + pokemon.name]">
                         <ion-card-content>
                             <ion-list lines="none">
                                 <ion-item>

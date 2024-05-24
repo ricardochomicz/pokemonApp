@@ -10,7 +10,7 @@ import {Router} from "@angular/router";
 })
 export class PokemonListPage implements OnInit {
 
-    pokemons: Pokemon[] = [];
+    pokemons: (Pokemon | { image: string; name: string; id: number })[] = [];
     filteredPokemons: any[] = [];
     ascendingOrder: boolean = true;
     offset: number = 0;

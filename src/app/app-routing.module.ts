@@ -9,8 +9,13 @@ const routes: Routes = [
     },
 
     {
-        path: 'pokemon/:name',
+        path: 'pokemon-detail/:pokemon',
         loadChildren: () => import('./pages/pokemon-detail/pokemon-detail.module').then(m => m.PokemonDetailPageModule)
+    },
+
+    {
+        path: 'pokemons-favorites',
+        loadChildren: () => import('./pages/pokemon-favorites/pokemon-favorites.module').then(m => m.PokemonFavoritesPageModule)
     },
 
     {
@@ -18,10 +23,8 @@ const routes: Routes = [
         redirectTo: 'pokemons',
         pathMatch: 'full'
     },
-    {
-        path: 'folder/:id',
-        loadChildren: () => import('./folder/folder.module').then(m => m.FolderPageModule)
-    },
+
+
 
 
 ];

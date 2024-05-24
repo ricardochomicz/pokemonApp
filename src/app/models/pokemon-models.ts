@@ -2,6 +2,11 @@ export interface Pokemon {
     id: number;
     name: string;
     image: string;
+    base_experience: string;
+    weight: string;
+    height: string;
+    abilities:{ ability: string, name: string }[];
+    types:{ type: string, name: string }[];
 }
 
 export interface PokemonApiResponse {
