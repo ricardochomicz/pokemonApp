@@ -8,7 +8,7 @@ export interface PokemonApiResponse {
     count: number;
     next: string;
     previous: string;
-    results: PokemonApiResult[];
+    results: { name: string, url: string }[];
 }
 
 export interface PokemonApiResult {

@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { PokemonListPageRoutingModule } from './pokemon-list-routing.module';
 
 import { PokemonListPage } from './pokemon-list.page';
+import {OrderByPipe} from "../../pipes/order-by.pipe";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    PokemonListPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        PokemonListPageRoutingModule,
+        OrderByPipe
+    ],
   declarations: [PokemonListPage]
 })
 export class PokemonListPageModule {}
