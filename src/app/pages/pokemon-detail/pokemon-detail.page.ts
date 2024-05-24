@@ -25,15 +25,14 @@ export class PokemonDetailPage implements OnInit {
     }
 
     ngOnInit() {
-
         const pokemonId = this.route.snapshot.paramMap.get('pokemon');
         if (pokemonId) {
             this.pokemonService.getPokemonByName(pokemonId).subscribe((pokemon: Pokemon) => {
                 this.pokemon = pokemon;
-                this.height = (this.pokemon.height / 10).toFixed(1);
-                this.weight = (this.pokemon.weight / 10).toFixed(2);
-                this.abilities = this.pokemon.abilities[0].ability.name
-                this.types = this.pokemon.types[0].type.name
+                this.height = (pokemon.height / 10).toFixed(1);
+                this.weight = (pokemon.weight / 10).toFixed(2);
+                this.abilities = pokemon.abilities[0].ability.name
+                this.types = pokemon.types[0].type.name
                 this.moves = pokemon.moves[0].move.name
             });
         }
