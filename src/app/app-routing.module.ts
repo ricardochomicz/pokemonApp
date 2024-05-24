@@ -1,10 +1,11 @@
 import {NgModule} from '@angular/core';
 import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
-import {PokemonListComponent} from "./pokemon-list/pokemon-list.component";
 
 const routes: Routes = [
+
     {
-        path: 'pokemons', component: PokemonListComponent
+        path: 'pokemons',
+        loadChildren: () => import('./pokemon-list/pokemon-list.module').then(m => m.PokemonListPageModule)
     },
 
     {
@@ -15,7 +16,8 @@ const routes: Routes = [
     {
         path: 'folder/:id',
         loadChildren: () => import('./folder/folder.module').then(m => m.FolderPageModule)
-    }
+    },
+
 ];
 
 @NgModule({
