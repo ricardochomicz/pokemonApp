@@ -17,6 +17,22 @@ const routes: Routes = [
         path: 'folder/:id',
         loadChildren: () => import('./folder/folder.module').then(m => m.FolderPageModule)
     },
+  {
+    path: 'pokemon-detail',
+    loadChildren: () => import('./pokemon-detail/pokemon-detail.module').then( m => m.PokemonDetailPageModule)
+  },
+  {
+    path: 'pokemon-detail',
+    loadChildren: () => import('./page/pokemon-detail/pokemon-detail.module').then( m => m.PokemonDetailPageModule)
+  },
+  {
+    path: 'pokemon-list',
+    loadChildren: () => import('./pages/pokemon-list/pokemon-list.module').then( m => m.PokemonListPageModule)
+  },
+  {
+    path: 'pokemon-detail',
+    loadChildren: () => import('./pages/pokemon-detail/pokemon-detail.module').then( m => m.PokemonDetailPageModule)
+  },
 
 ];
 
