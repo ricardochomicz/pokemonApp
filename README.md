@@ -4,7 +4,7 @@ Este é um aplicativo simples de listagem de Pokémon desenvolvido usando Ionic 
 
 ## Visão Geral
 
-O aplicativo permite visualizar uma lista de Pokémon, visualizar detalhes de cada Pokémon, favoritar Pokémon e pesquisar por Pokémon. A aplicação utiliza sessionStorage para armazenar os Pokémon favoritos.
+O aplicativo permite visualizar uma lista de Pokémon, visualizar detalhes de cada Pokémon, favoritar Pokémon, pesquisar por Pokémon e ordenar por nome. A aplicação utiliza sessionStorage para armazenar os Pokémon favoritos.
 
 ## Funcionalidades
 
@@ -12,6 +12,7 @@ O aplicativo permite visualizar uma lista de Pokémon, visualizar detalhes de ca
 - Visualização dos detalhes de cada Pokémon
 - Marcar Pokémon como favorito
 - Buscar Pokémon por nome
+- Ordenar por nome
 - Interface responsiva e adaptável a mudanças de orientação
 
 ## Estrutura do Projeto
