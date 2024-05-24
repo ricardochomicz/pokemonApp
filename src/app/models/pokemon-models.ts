@@ -3,11 +3,23 @@ export interface Pokemon {
     name: string;
     image: string;
     base_experience: string;
-    weight: string;
-    height: string;
-    abilities:{ ability: string, name: string }[];
-    types:{ type: string, name: string }[];
-    moves:{ move:string, name: string }[];
+    weight: any;
+    height: any;
+    abilities: {
+        ability: {
+            name: string
+        }
+    }[];
+    types: {
+        type: {
+            name: string
+        }
+    }[];
+    moves: {
+        move: {
+            name: string
+        }
+    }[];
 }
 
 export interface PokemonApiResponse {
