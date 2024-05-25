@@ -11,8 +11,6 @@ O aplicativo permite visualizar uma lista de Pokémon, visualizar detalhes de ca
 - Listagem de Pokémon com paginação
 - Visualização dos detalhes de cada Pokémon
 - Marcar Pokémon como favorito
-- ![image](https://github.com/ricardochomicz/pokemonApp/assets/58947372/08b16d3f-5d1c-4fbd-93c2-9613e93f1226)
-
 - Buscar Pokémon por nome
 - Ordenar por nome
 - Interface responsiva e adaptável a mudanças de orientação
