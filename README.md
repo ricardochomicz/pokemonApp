@@ -49,7 +49,6 @@ O aplicativo permite visualizar uma lista de Pokémon, visualizar detalhes de ca
 
 3. Adicione as plataformas
    ionic cordova platform add android
-   # ou
    ionic cordova platform add ios
 
 4. Iniciar servidor de desenvolvimento
@@ -63,5 +62,13 @@ O aplicativo permite visualizar uma lista de Pokémon, visualizar detalhes de ca
 
 7. Rodar dispositivo IOS
    ionic cordova run ios
+
+## Telas
+![pokemon](https://github.com/ricardochomicz/pokemonApp/assets/58947372/1ca34f3f-aad5-4ce6-8207-712d1690940d)
+![pokemon2](https://github.com/ricardochomicz/pokemonApp/assets/58947372/eafab299-dbd3-4b58-9304-dbfb2f0b78b7)
+![pokemon3](https://github.com/ricardochomicz/pokemonApp/assets/58947372/b4287e6e-b177-4af7-b6db-5eb92fdbc411)
+
+
+
 
    
